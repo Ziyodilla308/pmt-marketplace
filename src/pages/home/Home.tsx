@@ -1,7 +1,6 @@
-import {Link, useLocation, useParams} from 'react-router-dom';
-import {Button} from '@/components/ui/button.tsx';
+import {useLocation} from 'react-router-dom';
 import {Card, CardContent, CardFooter} from '@/components/ui/card.tsx';
-import {ArrowRight, CheckCircle2} from 'lucide-react';
+import {CheckCircle2} from 'lucide-react';
 import {
     Carousel,
     CarouselContent,
@@ -28,7 +27,6 @@ const Home = () => {
     const {t} = useTranslation();
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const filteredProducts = selectedCategory ? featuredProducts.filter(p => p.category === selectedCategory) : featuredProducts;
-
 
 
     return (
@@ -107,7 +105,6 @@ const Home = () => {
             </section>
 
 
-            {/* Featured Products */}
             <section className="py-16">
                 <div className="container mx-auto px-4">
                     <div className="flex justify-between items-center mb-12">
@@ -128,7 +125,6 @@ const Home = () => {
                                                 navigate={product.navigate}
                                                 lang={lang}
                                             >
-                                                {/* IMAGE */}
                                                 <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
                                                     <img
                                                         loading="lazy"
@@ -137,8 +133,6 @@ const Home = () => {
                                                         className="h-full w-full object-cover transition-transform duration-500
                                                group-hover:scale-110"
                                                     />
-
-                                                    {/* gradient overlay */}
                                                     <div
                                                         className="absolute inset-0 bg-gradient-to-t from-black/40
                                                via-black/10 to-transparent opacity-0
@@ -146,7 +140,6 @@ const Home = () => {
                                                     />
                                                 </div>
 
-                                                {/* CONTENT */}
                                                 <div className="flex flex-col justify-between p-6">
                                                     <h3
                                                         className="text-lg font-semibold leading-tight
@@ -172,7 +165,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Why Choose Us */}
             <section className="py-16 bg-secondary">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl font-bold text-center mb-12">{t("whyChoose")}</h2>
@@ -202,7 +194,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Clients Section */}
             <section className="py-16">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl font-bold text-center mb-12">{t("ourClients")}</h2>
