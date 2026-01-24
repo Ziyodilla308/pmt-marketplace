@@ -12,11 +12,6 @@ export const pmtCategories: TPmtCategories[] = [
         name: "КОМПЬЮТЕРИЗИРОВАННЫЕ ЛАЗЕРНЫЕ МАШИНЫ"
     },
     {
-        code: 6,
-        category: "auxiliary_machines",
-        name: "ВСПОМОГАТЕЛЬНЫЕ МАШИНЫ"
-    },
-    {
         code: 5,
         category: "automated_design",
         name: "АВТОМАТИЗИРОВАННОЕ ПРОЕКТИРОВАНИЕ"
@@ -27,15 +22,20 @@ export const pmtCategories: TPmtCategories[] = [
         name: "РАСКРОЙНЫЕ МАШИНЫ"
     },
     {
+        code: 7,
+        category: "press",
+        name: "ПРЕС"
+    },
+    {
+        code: 6,
+        category: "auxiliary_machines",
+        name: "ВСПОМОГАТЕЛЬНЫЕ МАШИНЫ"
+    },
+    {
         code: 3,
         category: "accessories_and_spare_parts",
         name: "АКСЕССУАРЫ И ЗАПАСНЫЕ ЧАСТИ"
-    },
-    {
-        code: 4,
-        category: "auto_machine",
-        name: "Auto Machine"
-    },
+    }
 ];
 
 export const pmtCategoriesFilter: TPmtCategoriesFilter[] = [
@@ -66,7 +66,7 @@ export const pmtCategoriesFilter: TPmtCategoriesFilter[] = [
     },
     {
         name: "PMT-DN7",
-        category: "auto_machine",
+        category: "automated_design",
         type: "PMT-DN7"
     },
     {
@@ -129,8 +129,22 @@ export const pmtCategoriesFilter: TPmtCategoriesFilter[] = [
         name: "PMT-T103-10/750w",
         category: "cutting_machines",
         type: "PMT-T103-10/750w"
+    },
+    {
+        name: "Прямострочка",
+        category: "accessories_and_spare_parts",
+        type: "straight_stitch"
+    },
+    {
+        name: "Оверлог",
+        category: "accessories_and_spare_parts",
+        type: "overlock"
+    },
+    {
+        name: "Каттер",
+        category: "accessories_and_spare_parts",
+        type: "cutting"
     }
-
 ]
 
 // MAX-980-QD
@@ -141,8 +155,8 @@ export const pmtProducts: TOnlyPmtProducts[] = [
     {
         id: 1,
         name: "Утюг с паровым генератором PMT-2035",
-        category: "generator_iron",
-        categoryHeader: "ironing-equipment",
+        category: "generator_iron", // pmtCategoriesFilter.type teng
+        categoryHeader: "ironing-equipment", // pmtCategoriesFilter.category teng
         image: "/ironing_equipment_1.jpg"
     },
     {
@@ -203,7 +217,7 @@ export const pmtProducts: TOnlyPmtProducts[] = [
         id: 11,
         name: "PMT-DN-7",
         category: "PMT-DN7",
-        categoryHeader: "auto-machine"
+        categoryHeader: "automated_design"
     },
     {
         id: 12,
@@ -258,5 +272,173 @@ export const pmtProducts: TOnlyPmtProducts[] = [
         name: "PMT-T103-10/750w",
         category: "PMT-T103-10/750w",
         categoryHeader: "cutting-machines"
+    },
+    {
+        id: 21,
+        name: "1",
+        category: "straight_stitch",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/1.png"
+    },
+    {
+        id: 22,
+        name: "2",
+        category: "straight_stitch",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/2.png"
+    },
+    {
+        id: 23,
+        name: "3",
+        category: "straight_stitch",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/3.png"
+    },
+    {
+        id: 24,
+        name: "4",
+        category: "straight_stitch",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/4.png"
+    },
+    {
+        id: 25,
+        name: "5",
+        category: "straight_stitch",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/5.png"
+    },
+    {
+        id: 26,
+        name: "6",
+        category: "straight_stitch",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/6.png"
+    },
+    {
+        id: 27,
+        name: "12",
+        category: "straight_stitch",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/12.png"
+    },
+    {
+        id: 28,
+        name: "16",
+        category: "straight_stitch",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/16.png"
+    },
+    {
+        id: 29,
+        name: "17",
+        category: "straight_stitch",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/17.png"
+    },
+    {
+        id: 30,
+        name: "11",
+        category: "overlock",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/11.png"
+    },
+    {
+        id: 31,
+        name: "15",
+        category: "overlock",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/15.png"
+    },
+    {
+        id: 32,
+        name: "13",
+        category: "overlock",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/13.png"
+    },
+    {
+        id: 33,
+        name: "8",
+        category: "cutting",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/8.png"
+    },
+    {
+        id: 34,
+        name: "10",
+        category: "cutting",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/10.png"
+    },
+    {
+        id: 35,
+        name: "18",
+        category: "cutting",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/18.png"
+    },
+    {
+        id: 36,
+        name: "20",
+        category: "cutting",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/20.png"
+    },
+    {
+        id: 37,
+        name: "25",
+        category: "cutting",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/25.png"
+    },
+    {
+        id: 38,
+        name: "28",
+        category: "cutting",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/28.png"
+    },
+    {
+        id: 39,
+        name: "9",
+        category: "cutting",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/9.png"
+    },
+    {
+        id: 40,
+        name: "19",
+        category: "cutting",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/19.png"
+    },
+    {
+        id: 41,
+        name: "21",
+        category: "cutting",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/21.png"
+    },
+    {
+        id: 42,
+        name: "22",
+        category: "cutting",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/22.png"
+    },
+    {
+        id: 43,
+        name: "23",
+        category: "cutting",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/23.png"
+    },
+    {
+        id: 44,
+        name: "26",
+        category: "cutting",
+        categoryHeader: "accessories_and_spare_parts",
+        image: "/accessories/26.png"
     },
 ]

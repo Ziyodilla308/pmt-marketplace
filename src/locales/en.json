@@ -10,8 +10,10 @@
   "contactMarketing": "Marketing Director",
   "contactDirector": "Director of Spare parts",
   "contactLead": "IT Department Lead",
-  "contactVisitOffice": "Visit Our Office",
+  "contactVisitOffice": "Visit Our Office and Showroom",
+  "contactVisitSclad": "Our Production and Warehouse",
   "contactMainOffice": "Main office",
+  "contactMainWarehouse": "Our Warehouse",
   "heroTitle": "Professional Sewing Machines by ",
   "heroDescription": "Industry-leading manufacturing quality and innovation for over 25 years",
   "pmt": "PMT",
@@ -51,5 +53,15 @@
   "automated_design": "Automated Design",
   "auxiliary_machines": "Auxiliary Machines",
   "cutting_machines": "Cutting Machines",
-  "shing_ling": "Shing Ling"
+  "shing_ling": "Shing Ling",
+  "subscribe": "Let’s subscribe, ",
+  "subscribeText": "Subscribe to get exclusive updates, insights, and opportunities delivered straight to your inbox.",
+  "amazing": "Amazing",
+  "stayConnected": "Stay connected",
+  "fullName": "Full name",
+  "phoneNumber": "Phone number",
+  "email": "Email",
+  "companyName": "Company name",
+  "tellUs": "Tell us about yourself",
+  "subscribeBtn": "Subscribe Now"
 }

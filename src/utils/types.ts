@@ -3,12 +3,25 @@ export type LanguageCode =  "ru" | "uz" | "en";
 export type DropdownItem = {
     name: string;
     code: LanguageCode;
+    svg: string;
 }
 
 export const languages: DropdownItem[] = [
-    {name: "Русскый", code: "ru"},
-    {name: "Uzbek", code: "uz"},
-    {name: "English", code: "en"},
+    {
+        name: "Русскый",
+        code: "ru",
+        svg: '/svg/ru.svg'
+    },
+    {
+        name: "Uzbek",
+        code: "uz",
+        svg: '/svg/uz.svg'
+    },
+    {
+        name: "English",
+        code: "en",
+        svg: '/svg/en.svg'
+    },
 ];
 
 export type TClients = {

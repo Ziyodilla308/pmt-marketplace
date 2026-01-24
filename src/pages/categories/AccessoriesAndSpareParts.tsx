@@ -1,4 +1,4 @@
-import {pmtProducts} from "@/data/pmtProducts.ts";
+import {pmtProducts} from "@/data/mock/pmtProducts.ts";
 import CategoryFilters from "@/components/elements/CategoryFilters.tsx";
 import {useCategoryFilter} from "@/hooks/useCategoryFilter.ts";
 import ProductsGrid from "@/components/elements/Products.Grid.tsx";
@@ -9,7 +9,8 @@ const AccessoriesAndSpareParts = () => {
 
     const {
         filteredProducts,
-        setSelectedType
+        setSelectedType,
+        selectedType
     } = useCategoryFilter(pmtProducts, "accessories-and-spare-parts");
 
     return (
@@ -23,9 +24,10 @@ const AccessoriesAndSpareParts = () => {
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-8">
-                    <aside className="w-full md:w-64 space-y-6">
+                    <aside className="w-full md:w-72 space-y-6">
                         <CategoryFilters
                             category="accessories_and_spare_parts"
+                            selectedFilter={selectedType} // <-- 3-chi prop
                             onFilterChange={(t) => setSelectedType(t)}
                         />
                     </aside>

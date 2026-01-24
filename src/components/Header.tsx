@@ -16,7 +16,7 @@ import {getLocalItem, setLocalItem} from "@/utils/persist-storage.ts";
 import i18n from "@/i18n.ts";
 import {ThemeSwitcher} from "@/components/elements/ThemeSwitcher.tsx";
 import {useTranslation} from "react-i18next";
-import {pmtCategories} from "@/data/pmtProducts.ts";
+import {pmtCategories} from "@/data/mock/pmtProducts.ts";
 
 
 const Header = () => {
@@ -106,29 +106,25 @@ const Header = () => {
                         </Link>
                     </nav>
 
-                    <div className="hidden md:flex items-center space-x-4">
-                        <Select
-                            value={selectedLanguageCode}
-                            onValueChange={(v) => handleLanguageSelect(v as LanguageCode)}
-                        >
-                            <SelectTrigger>
-                                <SelectValue placeholder="Languages"/>
-                            </SelectTrigger>
-
-                            <SelectContent>
-                                <SelectGroup>
-                                    {languages.map((l) => (
-                                        <SelectItem
-                                            key={l.code}
-                                            value={l.code}
-                                        >
-                                            {l.name}
-                                        </SelectItem>
-                                    ))}
-                                </SelectGroup>
-                            </SelectContent>
-                        </Select>
-                        <ThemeSwitcher/>
+                    <div className="hidden md:flex items-center space-x-3">
+                        {languages.map((lang) => (
+                            <button
+                                key={lang.code}
+                                onClick={() => handleLanguageSelect(lang.code as LanguageCode)}
+                                className={`flex items-center space-x-2 px-2 py-1 rounded hover:bg-gray-100 ${
+                                    selectedLanguageCode === lang.code ? 'bg-gray-200' : ''
+                                }`}
+                            >
+                                {/* Flag ikonka */}
+                                <img
+                                    src={lang.svg}
+                                    alt={lang.name}
+                                    className="w-5 h-5 rounded-sm"
+                                />
+                                <span className="hidden sm:inline">{lang.name}</span>
+                            </button>
+                        ))}
+                        <ThemeSwitcher />
                     </div>
 
                     {/* Mobile Menu */}

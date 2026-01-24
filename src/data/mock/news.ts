@@ -9,7 +9,7 @@ export const news: TNews[] = [
         date: "04.10.2025",
         category: "Sewing Machines",
         description:
-            "Discover how modern sewing machines can help you achieve smooth and precise stitching, making your projects more enjoyable and efficient.",
+            "ArgeMAS Bilişim — система управления производством нового поколения",
         author: {
             name: "Arge Mas",
         },
@@ -22,11 +22,11 @@ export const news: TNews[] = [
         date: "10.09.2025",
         category: "Sewing Machines",
         description:
-            "Discover how modern sewing machines can help you achieve smooth and precise stitching, making your projects more enjoyable and efficient.",
+            "Автоматическая машина для шитья по шаблону с врашающсйся головкой PMT-X7-10060SK-L-SJ",
         author: {
             name: "PMT",
         },
-        hashTag: "#CAITME2025",
+        hashTag: "#PMT #CAITME2025",
     },
     {
         id: 3,
@@ -35,10 +35,10 @@ export const news: TNews[] = [
         date: "10.09.2025",
         category: "Sewing Machines",
         description:
-            "Discover how modern sewing machines can help you achieve smooth and precise stitching, making your projects more enjoyable and efficient.",
+            "Успешно выступили на выставке CAITME 2025",
         author: {
             name: "PMT",
         },
-        hashTag: "#CAITME2025",
+        hashTag: "#PMT #CAITME2025",
     },
 ];

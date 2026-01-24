@@ -11,6 +11,7 @@ const Contact = () => {
       name: 'Erdogan Dikagac',
       role: t("contactFounder"),
       phone: '+998 93 184 83 25',
+      phone2: '+998 90 951 17 24',
       email: 'mac_erdogan@yahoo.com',
     },
     {
@@ -22,7 +23,7 @@ const Contact = () => {
     {
       name: 'Ruslan Sattarov',
       role: t("contactDirector"),
-      phone: '+998 97 130 66 58',
+      phone: '+998 93 184 83 22',
       email: 'mac_erdogan@yahoo.com',
     },
     {
@@ -69,6 +70,13 @@ const Contact = () => {
                       {contact.phone}
                     </a>
                     <a
+                        href={`tel:${contact.phone2}`}
+                        className="flex items-center gap-2 text-sm hover:text-primary transition-colors"
+                    >
+                      <Phone className="h-4 w-4" />
+                      {contact.phone2}
+                    </a>
+                    <a
                       href={`mailto:${contact.email}`}
                       className="flex items-center gap-2 text-sm hover:text-primary transition-colors break-all"
                     >
@@ -103,6 +111,10 @@ const Contact = () => {
                     <span>+998 93 184 83 25</span>
                   </p>
                   <p className="flex items-center gap-2">
+                    <Phone className="h-4 w-4" />
+                    <span>+998 90 951 17 24</span>
+                  </p>
+                  <p className="flex items-center gap-2">
                     <Mail className="h-4 w-4" />
                     <span>mac_erdogan@yahoo.com</span>
                   </p>
@@ -126,6 +138,60 @@ const Contact = () => {
                 </div>
               </CardContent>
             </Card>
+
+          </div>
+        </section>
+
+
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-8">{t("contactVisitSclad")}</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <Card>
+              <CardContent className="p-6">
+                <div className="flex items-start gap-3 mb-4">
+                  <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2">{t("contactMainWarehouse")}</h3>
+                    <p className="text-muted-foreground">
+                      Янгиюль, Ташкентская область
+                    </p>
+                  </div>
+                </div>
+                <div className="space-y-3 mt-6">
+                  <p className="flex items-center gap-2">
+                    <Phone className="h-4 w-4" />
+                    <span>+998 93 184 83 25</span>
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <Phone className="h-4 w-4" />
+                    <span>+998 90 951 17 24</span>
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <Mail className="h-4 w-4" />
+                    <span>mac_erdogan@yahoo.com</span>
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Interactive Map */}
+            <Card className="overflow-hidden">
+              <CardContent className="p-0 h-full">
+                <div className="w-full h-full min-h-[400px] bg-secondary flex items-center justify-center">
+                  <iframe
+                      src="https://yandex.uz/maps/189652/yangiyo'l/house/YkAYdgNnSEIFQFprfX1xcHxjZw==/?ll=69.047101%2C41.101309&z=18.62
+"
+                      width="100%"
+                      height="100%"
+                      style={{border: 0, minHeight: '400px'}}
+                      allowFullScreen
+                      loading="lazy"
+                      title="Office Location"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
           </div>
         </section>
       </div>

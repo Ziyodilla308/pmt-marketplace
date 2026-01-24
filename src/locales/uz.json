@@ -10,8 +10,10 @@
   "contactMarketing": "Marketing direktori",
   "contactDirector": "Ehtiyot qismlar direktori",
   "contactLead": "IT bo‘limi rahbari",
-  "contactVisitOffice": "Bizning ofisimizga tashrif buyuring",
+  "contactVisitOffice": "Bizning ofisimizga va showroom ga tashrif buyuring",
+  "contactVisitSclad": "Bizning ishlab chiqarish va omborimiz",
   "contactMainOffice": "Bosh ofis",
+  "contactMainWarehouse": "Ishlab chiqarish va Ombor",
   "heroTitle": "Professional Tikuv Mashinalari ",
   "heroDescription": "25 yildan ortiq sanoatda yetakchi sifat va innovatsiya",
   "pmt": "PMT",
@@ -51,5 +53,16 @@
   "heroDescriptionOne": "Avtomatlashtirilgan yuqori tezlikli OVERLOK tikuv mashinasi",
   "heroDescriptionTwo": "Avtomatlashtirilgan yuqori tezlikli to’g’ri chok tikuv mashinasi",
   "heroDescriptionThree": "Yuqori tezlikli ko’p funksiyali 12 ignali 24 ipli tikuv masinasi",
-  "footerDesc": "Sanoat va tijorat uchun mo‘ljallangan professional tikuv mashinalari."
+  "footerDesc": "Sanoat va tijorat uchun mo‘ljallangan professional tikuv mashinalari.",
+  "subscribe": "Keling, obuna bo‘ling",
+  "subscribeText": "Maxsus yangilanishlar, foydali ma’lumotlar va imkoniyatlarni to‘g‘ridan-to‘g‘ri sizning elektron pochtangizga olish uchun obuna bo‘ling.",
+  "amazing": "Ajoyib",
+  "stayConnected": "Aloqada bo‘ling",
+  "fullName": "To‘liq ism",
+  "phoneNumber": "Telefon raqam",
+  "email": "Elektron pochta",
+  "companyName": "Kompaniya nomi",
+  "tellUs": "O‘zingiz haqida gapirib bering",
+  "subscribeBtn": "Hozir obuna bo‘ling"
+
 }

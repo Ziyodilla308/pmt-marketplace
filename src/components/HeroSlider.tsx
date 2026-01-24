@@ -40,6 +40,13 @@ const HeroSlider = ({t, lang}) => {
         setCurrent((prev) => (prev - 1 + slides.length) % slides.length)
     }, [slides.length])
 
+    const scrollSubscribeSection = () => {
+        const el = document.getElementById("subscribe-section");
+        if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -111,11 +118,9 @@ const HeroSlider = ({t, lang}) => {
                             </p>
 
                             <div className="flex flex-wrap gap-4">
-                                <Button size="lg" asChild>
-                                    <Link to={`/${lang}/products`}>
-                                        {t("exploreProducts")}
+                                <Button size="lg" onClick={scrollSubscribeSection}>
+                                        {t("subscribeBtn")}
                                         <ArrowRight className="ml-2 h-5 w-5"/>
-                                    </Link>
                                 </Button>
 
                                 <Button size="lg" variant="outline" asChild>

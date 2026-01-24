@@ -1,4 +1,4 @@
-import {pmtProducts} from "@/data/pmtProducts.ts";
+import {pmtProducts} from "@/data/mock/pmtProducts.ts";
 import CategoryFilters from "@/components/elements/CategoryFilters.tsx";
 import {useCategoryFilter} from "@/hooks/useCategoryFilter.ts";
 import ProductsGrid from "@/components/elements/Products.Grid.tsx";
@@ -8,7 +8,8 @@ const AuxiliaryMachines = () => {
   const { t } = useTranslation();
   const {
     filteredProducts,
-    setSelectedType
+    setSelectedType,
+      selectedType
   } = useCategoryFilter(pmtProducts, "auxiliary-machines");
 
   return (
@@ -22,9 +23,10 @@ const AuxiliaryMachines = () => {
           </div>
 
           <div className="flex flex-col md:flex-row gap-8">
-            <aside className="w-full md:w-64 space-y-6">
+            <aside className="w-full md:w-72 space-y-6">
               <CategoryFilters
                   category="auxiliary_machines"
+                  selectedFilter={selectedType}
                   onFilterChange={(t) => setSelectedType(t)}
               />
             </aside>

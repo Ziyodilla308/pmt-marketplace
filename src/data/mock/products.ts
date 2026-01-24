@@ -5,14 +5,14 @@ import product4 from '/public/1000112.webp';
 import product5 from '/public/100113.jpg';
 import product6 from '/public/2.webp';
 import product7 from '/public/pless_machine_no_bg.png';
-import product8 from '/public/PMT-cat-1.png';
+import product8 from '/public/5.webp';
 import product9 from '/public/Cutting.png';
 import product10 from '/public/PMT-DN7.png';
 import product11 from '/public/MAX-900A_B.png';
 import product12 from '/public/MAX-Y4060.png';
 import product13 from '/public/PMT-T10S.png';
 import product14 from '/public/PMT-0010.png';
-import {Product, TProducts} from "@/utils/types.ts";
+import {TProducts} from "@/utils/types.ts";
 
 export const featuredProducts: TProducts[] = [
     {
@@ -62,7 +62,7 @@ export const featuredProducts: TProducts[] = [
     },
     {
         id: 6,
-        name: 'Закрепочная пуговичная машины',
+        name: 'Оверлоки',
         category: 'shingling',
         price: '$3,799',
         image: product6,
@@ -80,7 +80,7 @@ export const featuredProducts: TProducts[] = [
     },
     {
         id: 8,
-        name: 'Закрепочная пуговичная машины',
+        name: 'Примострочная машины',
         category: 'shingling',
         price: '$3,799',
         image: product8,
@@ -150,57 +150,4 @@ export const featuredProducts: TProducts[] = [
         navigateType: "in",
         navigate: "/categories/accessories_and_spare_parts"
     }
-];
-
-
-
-export const allProducts: Product[] = [
-    {
-        id: 1,
-        name: 'PMT Industrial Pro',
-        category: 'industrial',
-        price: 2999,
-        features: ['heavy-duty', 'automatic'],
-        image: product1,
-    },
-    {
-        id: 2,
-        name: 'PMT Embroidery Master',
-        category: 'embroidery',
-        price: 4499,
-        features: ['multi-head', 'computerized'],
-        image: product2,
-    },
-    {
-        id: 3,
-        name: 'PMT Heavy Duty',
-        category: 'industrial',
-        price: 3799,
-        features: ['heavy-duty'],
-        image: product3,
-    },
-    {
-        id: 4,
-        name: 'PMT Standard Plus',
-        category: 'industrial',
-        price: 1999,
-        features: ['automatic'],
-        image: product1,
-    },
-    {
-        id: 5,
-        name: 'PMT Embroidery Lite',
-        category: 'embroidery',
-        price: 2999,
-        features: ['computerized'],
-        image: product2,
-    },
-    {
-        id: 6,
-        name: 'PMT Accessories Kit',
-        category: 'accessories',
-        price: 299,
-        features: [],
-        image: product3,
-    },
 ];
