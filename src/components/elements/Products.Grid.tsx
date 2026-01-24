@@ -1,6 +1,7 @@
-import {Card, CardContent} from '@/components/ui/card';
+import {Card, CardContent, CardFooter} from '@/components/ui/card';
 import {TOnlyPmtProducts} from "@/utils/types.ts";
 import {Link, useParams} from "react-router-dom";
+import {Button} from "@/components/ui/button.tsx";
 
 interface Props {
     products: TOnlyPmtProducts[];
@@ -11,24 +12,41 @@ const ProductsGrid = ({products}: Props) => {
     return (
         <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
             {products.map((product) => (
-                <Link to={`/${lang}/categories/${product.category}/detail/${product.id}`}>
-                    <Card key={product.id} className="w-full group hover:shadow-lg transition-shadow">
-                        <CardContent className="p-0">
-                            <div className="aspect-square overflow-hidden rounded-t-lg bg-secondary">
-                                <img
-                                    src={product.image}
-                                    alt={product.name}
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                <Card
+                    key={product.id}
+                    className="group h-full overflow-hidden rounded-xl border bg-background
+                               transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <CardContent className="p-0">
+                        <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
+                            <img
+                                loading="lazy"
+                                src={product.image}
+                                alt={product.name}
 
-                                />
-                            </div>
-                            <div className="p-6">
-                                <h3 className="font-semibold text-lg mb-2">{product.name}</h3>
-                            </div>
-                        </CardContent>
-
-                    </Card>
-                </Link>
+                            />
+                            <div
+                                className="absolute inset-0 bg-gradient-to-t from-black/40
+                                               via-black/10 to-transparent opacity-0
+                                               transition-opacity duration-300 group-hover:opacity-100"
+                            />
+                        </div>
+                        <div className="flex flex-col justify-between p-6">
+                            <h3
+                                className="text-lg font-semibold leading-tight
+                                               transition-colors duration-300 group-hover:text-primary"
+                            >
+                                {product.name}
+                            </h3>
+                        </div>
+                    </CardContent>
+                    <CardFooter className="p-4 pt-0">
+                        <Button variant="default" className="w-full" asChild>
+                            <Link to={`/${lang}/categories/${product.category}/detail/${product.id}`}>
+                                View Details
+                            </Link>
+                        </Button>
+                    </CardFooter>
+                </Card>
             ))}
         </div>
     );

@@ -15,6 +15,9 @@ import AuxiliaryMachines from './pages/categories/AuxiliaryMachines';
 import CuttingMachines from './pages/categories/CuttingMachines';
 import ShingLing from './pages/categories/ShingLing';
 import {ThemeProvider} from "next-themes";
+import Press from "@/pages/categories/Press.tsx";
+import Detail from "@/pages/productDetails/Detail.tsx";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -33,13 +36,16 @@ const App = () => (
                             <Route index element={<Home/>}/>
                             <Route path="contact" element={<Contact/>}/>
                             <Route path="categories/ironing_equipment" element={<IroningEquipment/>}/>
-                            <Route path="categories/computerized_laser_machines" element={<ComputerizedLaserMachines/>}/>
+                            <Route path="categories/computerized_laser_machines"
+                                   element={<ComputerizedLaserMachines/>}/>
                             <Route path="categories/accessories_and_spare_parts" element={<AccessoriesAndSpareParts/>}/>
                             <Route path="categories/auto_machine" element={<AutoMachine/>}/>
                             <Route path="categories/automated_design" element={<AutomatedDesign/>}/>
+                            <Route path="categories/press" element={<Press/>}/>
                             <Route path="categories/auxiliary_machines" element={<AuxiliaryMachines/>}/>
                             <Route path="categories/cutting_machines" element={<CuttingMachines/>}/>
                             <Route path="categories/shing_ling" element={<ShingLing/>}/>
+                            <Route path="/:lang/categories/:category/detail/:id" element={<Detail/>}/>
                         </Route>
                     </Routes>
                 </BrowserRouter>

@@ -130,7 +130,7 @@ export const featuredProducts: TProducts[] = [
         price: '$3,799',
         image: product12,
         navigateType: "in",
-        navigate: "/categories/accessories_and_spare_parts"
+        navigate: "/categories/press"
     },
     {
         id: 14,

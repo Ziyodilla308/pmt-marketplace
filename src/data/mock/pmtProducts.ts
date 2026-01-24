@@ -86,6 +86,16 @@ export const pmtCategoriesFilter: TPmtCategoriesFilter[] = [
         navigate: "https://www.raiseagaintech.com/Application/Automotive/Interior_Others/&id=109"
     },
     {
+        name: "MAX-F600",
+        category: "press",
+        type: "MAX-F600"
+    },
+    {
+        name: "MAX-Y4060-2",
+        category: "press",
+        type: "MAX-Y4060-2"
+    },
+    {
         name: "MAX-SQ1",
         category: "auxiliary_machines",
         type: "MAX-SQ1"
@@ -114,11 +124,6 @@ export const pmtCategoriesFilter: TPmtCategoriesFilter[] = [
         name: "MAX-980-QD",
         category: "cutting_machines",
         type: "MAX-980-QD"
-    },
-    {
-        name: "MAX-980D",
-        category: "cutting_machines",
-        type: "MAX-980D"
     },
     {
         name: "PMT-T911",
@@ -163,13 +168,36 @@ export const pmtProducts: TOnlyPmtProducts[] = [
         id: 2,
         name: "Парогенратор с двумя утюгами PMT-BK02/03/04",
         category: "generator_iron",
-        categoryHeader: "ironing-equipment"
+        categoryHeader: "ironing-equipment",
+        image: "/ironing_equipment/iron1.jpg"
     },
     {
         id: 3,
         name: "Автоматический парогенратор PMT-BK20/30/40/60/80/100",
         category: "generator_iron",
-        categoryHeader: "ironing-equipment"
+        categoryHeader: "ironing-equipment",
+        image: "/ironing_equipment/iron2.jpg"
+    },
+    {
+        id: 111,
+        name: "Машина для выведения пятен с парогенератором в комплекте с аксессуарами PMT-КК-LK-01",
+        category: "generator_iron", // pmtCategoriesFilter.type teng
+        categoryHeader: "ironing-equipment", // pmtCategoriesFilter.category teng
+        image: "/ironing_equipment/iron3.jpg"
+    },
+    {
+        id: 222,
+        name: "Промышленный гладильный стол со встроенным парогенератором PMT-КК-1EU/TBK",
+        category: "generator_iron",
+        categoryHeader: "ironing-equipment",
+        image: "/ironing_equipment/iron4.jpg"
+    },
+    {
+        id: 333,
+        name: "Промышленный парогладильное оборудование с комплектующими PMT-Po1/KG/EU/TBK",
+        category: "generator_iron",
+        categoryHeader: "ironing-equipment",
+        image: "/ironing_equipment/iron5.jpg"
     },
     {
         id: 4,
@@ -187,13 +215,15 @@ export const pmtProducts: TOnlyPmtProducts[] = [
         id: 6,
         name: "PMT-X7-10060SK-L-SJ",
         category: "PMT-X7-10060SK-L-SJ",
-        categoryHeader: "computerized-laser-machines"
+        categoryHeader: "computerized-laser-machines",
+        image: "/laser/laser1.jpg"
     },
     {
         id: 7,
         name: "PMT-0010",
         category: "iron",
-        categoryHeader: "accessories-and-spare-parts"
+        categoryHeader: "accessories-and-spare-parts",
+        image: "/accessories/PMT-0010.png"
     },
     {
         id: 8,
@@ -217,61 +247,71 @@ export const pmtProducts: TOnlyPmtProducts[] = [
         id: 11,
         name: "PMT-DN-7",
         category: "PMT-DN7",
-        categoryHeader: "automated_design"
+        categoryHeader: "automated_design",
+        image: "/automated/automated1.jpg"
+    },
+    {
+        id: 4141,
+        name: "Инжекторный Плотер с сенсорным экраном WS-230/G2S",
+        category: "WS-230/G2S",
+        categoryHeader: "automated_design",
+        image: "/automated/automated2.jpg"
+    },
+    {
+        id: 4242,
+        name: "Инжекторный Плотер WS-230B",
+        category: "WS-230B",
+        categoryHeader: "automated_design",
+        image: "/automated/automated3.png"
     },
     {
         id: 12,
-        name: "MAX-SQ1",
+        name: "Пневматическая машина для пришивания MAX-SQ1",
         category: "MAX-SQ1",
-        categoryHeader: "auxiliary-machines"
+        categoryHeader: "auxiliary-machines",
+        image: "/auxiliary/aux1.jpg"
     },
     {
         id: 13,
-        name: "PMT-T20S",
+        name: "Машина для распределения нитей PMT-T20S",
         category: "PMT-T20S",
-        categoryHeader: "auxiliary-machines"
+        categoryHeader: "auxiliary-machines",
+        image: "/auxiliary/aux2.jpg"
     },
     {
         id: 14,
-        name: "PMT-10S",
+        name: "Машина для распределения нитей PMT-T10S",
         category: "PMT-10S",
-        categoryHeader: "auxiliary-machines"
-    },
-    {
-        id: 15,
-        name: "MAX-100EZ",
-        category: "MAX-100EZ",
-        categoryHeader: "auxiliary-machines"
+        categoryHeader: "auxiliary-machines",
+        image: "/auxiliary/aux3.jpg"
     },
     {
         id: 16,
-        name: "MAX-900A/B",
+        name: "Станок для резки с ленточным ножом MAX-900A/B",
         category: "MAX-900A/B",
-        categoryHeader: "cutting-machines"
+        categoryHeader: "cutting-machines",
+        image: "/cutting/cutting1.jpg"
     },
     {
         id: 17,
-        name: "MAX-980-QD",
+        name: "Краеобрезочная машина для ткани с электрическим управлением MAX-980-QD / MAX-980D",
         category: "MAX-980-QD",
-        categoryHeader: "cutting-machines"
-    },
-    {
-        id: 18,
-        name: "MAX-980D",
-        category: "MAX-980D",
-        categoryHeader: "cutting-machines"
+        categoryHeader: "cutting-machines",
+        image: "/cutting/cutting2.jpg"
     },
     {
         id: 19,
         name: "PMT-T911",
         category: "PMT-T911",
-        categoryHeader: "cutting-machines"
+        categoryHeader: "cutting-machines",
+        image: "/cutting/cutting3.jpg"
     },
     {
         id: 20,
-        name: "PMT-T103-10/750w",
+        name: "Вертикальный нож для кройных работ PMT-T103-10",
         category: "PMT-T103-10/750w",
-        categoryHeader: "cutting-machines"
+        categoryHeader: "cutting-machines",
+        image: "/cutting/cutting4.jpg"
     },
     {
         id: 21,
@@ -440,5 +480,19 @@ export const pmtProducts: TOnlyPmtProducts[] = [
         category: "cutting",
         categoryHeader: "accessories_and_spare_parts",
         image: "/accessories/26.png"
+    },
+    {
+        id: 46,
+        name: "MAX-F600",
+        category: "MAX-F600",
+        categoryHeader: "press",
+        image: "/press/press1.jpg"
+    },
+    {
+        id: 47,
+        name: "Двухпозиционная машина для горячего прессования MAX-Y4060-2",
+        category: "MAX-Y4060-2",
+        categoryHeader: "press",
+        image: "/press/press2.png"
     },
 ]
