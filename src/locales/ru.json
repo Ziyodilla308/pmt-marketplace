@@ -64,5 +64,17 @@
   "companyName": "Название компании",
   "tellUs": "Расскажите о себе",
   "subscribeBtn": "Подписаться сейчас",
-  "press": "Прес"
+  "press": "Прес",
+  "buyNow": "Купить сейчас",
+  "save": "Сохранить",
+  "share": "Поделиться",
+  "freeShipping": "Бесплатная доставка",
+  "twoYearWarranty": "Гарантия 2 года",
+  "thirtyDayReturns": "Возврат в течение 30 дней",
+  "onOrders": "Для заказов",
+  "fullCoverage": "Полное покрытие",
+  "noQuestionsAsked": "Без лишних вопросов",
+  "description": "Описание",
+  "newArrival": "Новинка",
+  "viewDetails": "Посмотреть детали"
 }

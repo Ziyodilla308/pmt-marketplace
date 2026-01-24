@@ -1,11 +1,13 @@
 import {motion} from "framer-motion";
 import {Check} from "lucide-react";
+import {useTranslation} from "react-i18next";
 
 interface ProductDescriptionProps {
     description: string;
 }
 
 export const ProductDescription = ({description}: ProductDescriptionProps) => {
+    const {t} = useTranslation();
     return (
         <motion.div
             initial={{opacity: 0, y: 20}}
@@ -14,7 +16,7 @@ export const ProductDescription = ({description}: ProductDescriptionProps) => {
             className="space-y-6"
         >
             <div className="space-y-4">
-                <h2 className="text-2xl font-semibold text-foreground">About This Machine</h2>
+                <h2 className="text-2xl font-semibold text-foreground">{t("description")}</h2>
                 <p className="text-muted-foreground text-lg leading-relaxed">
                     {description}
                 </p>

@@ -64,6 +64,17 @@
   "companyName": "Kompaniya nomi",
   "tellUs": "O‘zingiz haqida gapirib bering",
   "subscribeBtn": "Hozir obuna bo‘ling",
-  "press": "Press"
-
+  "press": "Press",
+  "buyNow": "Hozir sotib olish",
+  "save": "Saqlash",
+  "share": "Ulashish",
+  "freeShipping": "Bepul yetkazib berish",
+  "twoYearWarranty": "2 yillik kafolat",
+  "thirtyDayReturns": "30 kun ichida qaytarish",
+  "onOrders": "Buyurtmalar uchun",
+  "fullCoverage": "To‘liq qamrov",
+  "noQuestionsAsked": "Savollarsiz",
+  "description": "Tavsif",
+  "newArrival": "Yangi kelgan",
+  "viewDetails": "Batafsil ko‘rish"
 }

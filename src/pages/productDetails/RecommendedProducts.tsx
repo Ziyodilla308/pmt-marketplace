@@ -4,12 +4,12 @@ import {Button} from "@/components/ui/button";
 import {Card, CardContent, CardFooter} from "@/components/ui/card";
 
 interface RecommendedProduct {
-    id: string;
+    id: number;
     name: string;
-    image: string;
-    price: string;
-    rating: number;
-    reviewCount: number;
+    category: string;
+    categoryHeader: string;
+    image?: string;
+
 }
 
 interface RecommendedProductsProps {
@@ -58,26 +58,6 @@ export const RecommendedProducts = ({products}: RecommendedProductsProps) => {
                                         <h3 className="font-semibold text-foreground line-clamp-2 group-hover:text-primary transition-colors">
                                             {product.name}
                                         </h3>
-                                        <div className="flex items-center gap-2">
-                                            <div className="flex items-center gap-0.5">
-                                                {Array.from({length: 5}).map((_, i) => (
-                                                    <Star
-                                                        key={i}
-                                                        className={`w-4 h-4 ${
-                                                            i < Math.floor(product.rating)
-                                                                ? "fill-primary text-primary"
-                                                                : "fill-muted text-muted"
-                                                        }`}
-                                                    />
-                                                ))}
-                                            </div>
-                                            <span className="text-sm text-muted-foreground">
-                        ({product.reviewCount})
-                      </span>
-                                        </div>
-                                        <div className="text-xl font-bold text-foreground">
-                                            {product.price}
-                                        </div>
                                     </div>
                                 </CardContent>
                                 <CardFooter className="p-4 pt-0">

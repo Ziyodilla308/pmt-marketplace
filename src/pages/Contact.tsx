@@ -177,18 +177,17 @@ const Contact = () => {
             {/* Interactive Map */}
             <Card className="overflow-hidden">
               <CardContent className="p-0 h-full">
-                <div className="w-full h-full min-h-[400px] bg-secondary flex items-center justify-center">
-                  <iframe
-                      src="https://yandex.uz/maps/189652/yangiyo'l/house/YkAYdgNnSEIFQFprfX1xcHxjZw==/?ll=69.047101%2C41.101309&z=18.62
-"
-                      width="100%"
-                      height="100%"
-                      style={{border: 0, minHeight: '400px'}}
-                      allowFullScreen
-                      loading="lazy"
-                      title="Office Location"
-                  />
-                </div>
+                  <div className="w-full h-full min-h-[400px] bg-secondary flex items-center justify-center">
+                      <iframe
+                          src="https://yandex.uz/map-widget/v1/?ll=69.047373%2C41.101259&mode=whatshere&whatshere%5Bpoint%5D=69.046981%2C41.100873&whatshere%5Bzoom%5D=17&z=17.73"
+                          width="100%"
+                          height="100%"
+                          style={{border: 0, minHeight: '400px'}}
+                          allowFullScreen
+                          loading="lazy"
+                          title="Office Location"
+                      />
+                  </div>
               </CardContent>
             </Card>
 

@@ -64,5 +64,17 @@
   "companyName": "Company name",
   "tellUs": "Tell us about yourself",
   "subscribeBtn": "Subscribe Now",
-  "press": "Press"
+  "press": "Press",
+  "buyNow": "Buy now",
+  "save": "Save",
+  "share": "Share",
+  "freeShipping": "Free Shipping",
+  "twoYearWarranty": "2 Year Warranty",
+  "thirtyDayReturns": "30-Day Returns",
+  "onOrders": "On orders",
+  "fullCoverage": "Full coverage",
+  "noQuestionsAsked": "No questions asked",
+  "description": "Description",
+  "newArrival": "New arrival",
+  "viewDetails": "View details"
 }
