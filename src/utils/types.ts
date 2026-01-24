@@ -1,4 +1,4 @@
-export type LanguageCode = "uz" | "ru" | "en";
+export type LanguageCode =  "ru" | "uz" | "en";
 
 export type DropdownItem = {
     name: string;
@@ -6,8 +6,8 @@ export type DropdownItem = {
 }
 
 export const languages: DropdownItem[] = [
-    {name: "Uzbek", code: "uz"},
     {name: "Русскый", code: "ru"},
+    {name: "Uzbek", code: "uz"},
     {name: "English", code: "en"},
 ];
 

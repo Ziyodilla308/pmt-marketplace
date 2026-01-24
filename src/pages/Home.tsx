@@ -87,12 +87,13 @@ const Home = () => {
                                             lang={lang}
                                         >
                                             <div
-                                                className="aspect-square overflow-hidden rounded-t-lg bg-secondary">
+                                                className="overflow-hidden rounded-t-lg bg-secondary">
                                                 <img
+                                                    width={600}
                                                     loading={"lazy"}
                                                     src={product.image}
                                                     alt={product.name}
-                                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                                    className="object-cover group-hover:scale-105 transition-transform duration-300"
                                                 />
                                             </div>
                                             <div className="p-6">

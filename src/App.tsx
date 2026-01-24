@@ -5,7 +5,6 @@ import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
-import Products from './pages/Products';
 import Contact from './pages/Contact';
 import IroningEquipment from './pages/categories/IroningEquipment';
 import ComputerizedLaserMachines from './pages/categories/ComputerizedLaserMachines';
@@ -31,7 +30,7 @@ const App = () => (
                     v7_relativeSplatPath: true,
                 }}>
                     <Routes>
-                        <Route path="/" element={<Navigate to="/uz"/>}></Route>
+                        <Route path="/" element={<Navigate to="/ru"/>}></Route>
                         <Route path="/:lang" element={<Layout/>}>
                             <Route index element={<Home/>}/>
                             <Route path="contact" element={<Contact/>}/>

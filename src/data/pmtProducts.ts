@@ -4,43 +4,38 @@ export const pmtCategories: TPmtCategories[] = [
     {
         code: 1,
         category: "ironing_equipment",
-        name: "Ironing Equipment"
+        name: "ГЛАДИЛЬНОЕ ОБОРУДОВАНИЕ"
     },
     {
         code: 2,
         category: "computerized_laser_machines",
-        name: "Computerized Laser Machines"
+        name: "КОМПЬЮТЕРИЗИРОВАННЫЕ ЛАЗЕРНЫЕ МАШИНЫ"
+    },
+    {
+        code: 6,
+        category: "auxiliary_machines",
+        name: "ВСПОМОГАТЕЛЬНЫЕ МАШИНЫ"
+    },
+    {
+        code: 5,
+        category: "automated_design",
+        name: "АВТОМАТИЗИРОВАННОЕ ПРОЕКТИРОВАНИЕ"
+    },
+    {
+        code: 7,
+        category: "cutting_machines",
+        name: "РАСКРОЙНЫЕ МАШИНЫ"
     },
     {
         code: 3,
         category: "accessories_and_spare_parts",
-        name: "Accessories and Spare Parts"
+        name: "АКСЕССУАРЫ И ЗАПАСНЫЕ ЧАСТИ"
     },
     {
         code: 4,
         category: "auto_machine",
         name: "Auto Machine"
     },
-    {
-        code: 5,
-        category: "automated_design",
-        name: "Automated Design"
-    },
-    {
-        code: 6,
-        category: "auxiliary_machines",
-        name: "Auxiliary Machines"
-    },
-    {
-        code: 7,
-        category: "cutting_machines",
-        name: "Cutting Machines"
-    },
-    {
-        code: 8,
-        category: "shing_ling",
-        name: "Shing Ling"
-    }
 ];
 
 export const pmtCategoriesFilter: TPmtCategoriesFilter[] = [

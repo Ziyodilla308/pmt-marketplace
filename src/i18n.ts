@@ -1,43 +1,32 @@
 import translationUZ from "./locales/uz.json";
 import translationRU from "./locales/ru.json";
 import translationEN from "./locales/en.json";
-import {getLocalItem, setLocalItem} from "@/utils/persist-storage.ts";
 import i18next from "i18next";
-import backend from "i18next-http-backend";
-import detector from "i18next-browser-languagedetector";
 import {initReactI18next} from "react-i18next";
+import {getLocalItem, setLocalItem} from "@/utils/persist-storage";
 
 const resources = {
-    uz: {
-        translation: translationUZ
-    },
-    ru: {
-        translation: translationRU
-    },
-    en: {
-        translation: translationEN
-    },
+    ru: {translation: translationRU},
+    uz: {translation: translationUZ},
+    en: {translation: translationEN},
+};
 
-}
 
-const language = getLocalItem("LANGUAGE");
+const DEFAULT_LANG = "ru";
 
-if (!language) {
-    setLocalItem("LANGUAGE", "uz");
-}
+const savedLang = getLocalItem("LANGUAGE") || DEFAULT_LANG;
+setLocalItem("LANGUAGE", savedLang);
 
 i18next
-    .use(backend)
-    .use(detector)
     .use(initReactI18next)
     .init({
         resources,
-        lng: getLocalItem("LANGUAGE") || "uz",
-        fallbackLng: "uz",
-        keySeparator: false,
+        lng: savedLang,
+        fallbackLng: "ru",
         debug: false,
+        keySeparator: false,
         interpolation: {
-            escapeValue: false
+            escapeValue: false,
         },
     });
 

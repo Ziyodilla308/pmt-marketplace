@@ -19,35 +19,40 @@ import {useTranslation} from "react-i18next";
 import {pmtCategories} from "@/data/pmtProducts.ts";
 
 
-
 const Header = () => {
+    const savedLang = getLocalItem("LANGUAGE");
 
+    const initialLang: LanguageCode =
+        savedLang === "ru" || savedLang === "uz" || savedLang === "en"
+            ? savedLang
+            : "ru";
+
+    
     const {t} = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
     const {lang} = useParams<{ lang: LanguageCode }>();
     const navigate = useNavigate();
     const pathname = useLocation();
     const l = pathname.pathname.split("/")[1];
-    const [selectedLanguageCode, setSelectedLanguageCode] = useState<LanguageCode>(() => {
-        const savedLang = getLocalItem("LANGUAGE");
-        return savedLang as LanguageCode || (lang === "ru" ? "ru" : "uz");
-    })
+    const [selectedLanguageCode, setSelectedLanguageCode] =
+        useState<LanguageCode>(initialLang);
 
     const handleLanguageSelect = (langCode: LanguageCode) => {
         setSelectedLanguageCode(langCode);
         i18n.changeLanguage(langCode);
-        setLocalItem('LANGUAGE', langCode);
+        setLocalItem("LANGUAGE", langCode);
         navigate(`/${langCode}`);
-    }
-
+    };
 
     useEffect(() => {
-        if (lang && lang !== i18n.language) {
-            setSelectedLanguageCode(lang);
+        if (!lang) return;
+
+        if (lang !== i18n.language) {
             i18n.changeLanguage(lang);
-            setLocalItem('LANGUAGE', lang);
+            setSelectedLanguageCode(lang);
+            setLocalItem("LANGUAGE", lang);
         }
-    }, [lang, i18n]);
+    }, [lang]);
 
     useEffect(() => {
         document.documentElement.lang = i18n.language;

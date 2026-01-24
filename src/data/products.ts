@@ -5,7 +5,13 @@ import product4 from '/public/1000112.webp';
 import product5 from '/public/100113.jpg';
 import product6 from '/public/2.webp';
 import product7 from '/public/pless_machine_no_bg.png';
-import product8 from '/public/19.webp';
+import product8 from '/public/PMT-cat-1.png';
+import product9 from '/public/Cutting.png';
+import product10 from '/public/PMT-DN7.png';
+import product11 from '/public/MAX-900A_B.png';
+import product12 from '/public/MAX-Y4060.png';
+import product13 from '/public/PMT-T10S.png';
+import product14 from '/public/PMT-0010.png';
 import {Product, TProducts} from "@/utils/types.ts";
 
 export const featuredProducts: TProducts[] = [
@@ -92,64 +98,55 @@ export const featuredProducts: TProducts[] = [
     },
     {
         id: 10,
-        name: 'PMT-T911',
+        name: 'КОМПЬЮТЕРИЗИРОВАННЫЕ ЛАЗЕРНЫЕ МАШИНЫ',
         category: 'pmt',
         price: '$3,799',
-        // image: product8,
+        image: product9,
         navigateType: "in",
-        navigate: "/categories/cutting_machines"
+        navigate: "/categories/computerized_laser_machines"
     },
     {
         id: 11,
-        name: 'Вертикальный нож для кройных работ PMT-T103-10',
+        name: 'АВТОМАТИЗИРОВАННОЕ ПРОЕКТИРОВАНИЕ',
         category: 'pmt',
         price: '$3,799',
-        // image: product8,
+        image: product10,
+        navigateType: "in",
+        navigate: "/categories/automated_design"
+    },
+    {
+        id: 12,
+        name: 'РАСКРОЙНЫЕ МАШИНЫ',
+        category: 'pmt',
+        price: '$3,799',
+        image: product11,
         navigateType: "in",
         navigate: "/categories/cutting_machines"
     },
     {
-        id: 12,
-        name: 'Машина для распределения нитей PMT-T10S',
-        category: 'pmt',
-        price: '$3,799',
-        // image: product8,
-        navigateType: "in",
-        navigate: "/categories/auxiliary_machines"
-    },
-    {
         id: 13,
-        name: 'УТЮГ - PMT-0010',
+        name: 'ПРЕС',
         category: 'pmt',
         price: '$3,799',
-        // image: product8,
+        image: product12,
         navigateType: "in",
         navigate: "/categories/accessories_and_spare_parts"
     },
     {
         id: 14,
-        name: 'УТЮГ - PMT-1000',
+        name: 'ВСПОМОГАТЕЛЬНЫЕ МАШИНЫ',
         category: 'pmt',
         price: '$3,799',
-        // image: product8,
+        image: product13,
         navigateType: "in",
-        navigate: "/categories/accessories_and_spare_parts"
+        navigate: "/categories/auxiliary_machines"
     },
     {
         id: 15,
-        name: 'УТЮГ - PMT-0001',
+        name: 'АКСЕССУАРЫ И ЗАПАСНЫЕ ЧАСТИ',
         category: 'pmt',
         price: '$3,799',
-        // image: product8,
-        navigateType: "in",
-        navigate: "/categories/accessories_and_spare_parts"
-    },
-    {
-        id: 16,
-        name: 'УТЮГ - PMT-B-200',
-        category: 'pmt',
-        price: '$3,799',
-        // image: product8,
+        image: product14,
         navigateType: "in",
         navigate: "/categories/accessories_and_spare_parts"
     }
