@@ -49,7 +49,6 @@ const SubsCribe = () => {
                     <CardContent className="p-8 sm:p-10">
                         <form onSubmit={handleSubmit(onFormSubmit)} className="space-y-6">
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                {/* Full Name */}
                                 <div className="space-y-2 group">
                                     <Label htmlFor="fullName"
                                            className="text-foreground font-medium flex items-center gap-2">
@@ -59,14 +58,13 @@ const SubsCribe = () => {
                                     <Input
                                         id="fullName"
                                         {...register("fullName")}
-                                        placeholder="John Doe"
                                         className="h-12 border-border/50 focus:border-primary transition-all duration-300 bg-background/50"
                                     />
                                     {errors.fullName &&
                                         <p className="text-red-500 text-sm">{errors.fullName.message}</p>}
                                 </div>
 
-                                {/* Phone */}
+
                                 <div className="space-y-2 group">
                                     <Label htmlFor="phone"
                                            className="text-foreground font-medium flex items-center gap-2">
@@ -77,13 +75,13 @@ const SubsCribe = () => {
                                         id="phone"
                                         type="tel"
                                         {...register("phone")}
-                                        placeholder="+1 (555) 000-0000"
+
                                         className="h-12 border-border/50 focus:border-primary transition-all duration-300 bg-background/50"
                                     />
                                     {errors.phone && <p className="text-red-500 text-sm">{errors.phone.message}</p>}
                                 </div>
 
-                                {/* Email */}
+
                                 <div className="space-y-2 group">
                                     <Label htmlFor="email"
                                            className="text-foreground font-medium flex items-center gap-2">
@@ -94,13 +92,13 @@ const SubsCribe = () => {
                                         id="email"
                                         type="email"
                                         {...register("email")}
-                                        placeholder="john@example.com"
+
                                         className="h-12 border-border/50 focus:border-primary transition-all duration-300 bg-background/50"
                                     />
                                     {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
                                 </div>
 
-                                {/* Company */}
+
                                 <div className="space-y-2 group">
                                     <Label htmlFor="company"
                                            className="text-foreground font-medium flex items-center gap-2">
@@ -110,14 +108,14 @@ const SubsCribe = () => {
                                     <Input
                                         id="company"
                                         {...register("company")}
-                                        placeholder="Acme Inc."
+
                                         className="h-12 border-border/50 focus:border-primary transition-all duration-300 bg-background/50"
                                     />
                                     {errors.company && <p className="text-red-500 text-sm">{errors.company.message}</p>}
                                 </div>
                             </div>
 
-                            {/* Message */}
+                
                             <div className="space-y-2">
                                 <Label htmlFor="message"
                                        className="text-foreground font-medium flex items-center gap-2">
@@ -127,7 +125,7 @@ const SubsCribe = () => {
                                 <Textarea
                                     id="message"
                                     {...register("message")}
-                                    placeholder="What are you interested in? How can we help you?"
+
                                     className="min-h-[120px] border-border/50 focus:border-primary transition-all duration-300 bg-background/50 resize-none"
                                 />
                                 {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
