@@ -9,8 +9,10 @@ import {RecommendedProducts} from "@/pages/productDetails/RecommendedProducts.ts
 import {motion} from "framer-motion";
 import {toast} from "sonner";
 import {pmtProducts} from "@/data/mock/pmtProducts.ts";
+import {useTranslation} from "react-i18next";
 
 const Detail = () => {
+    const { t } = useTranslation();
     const {category, id} = useParams<{ category: string; id: string }>();
 
     const product = pmtProducts.find(
@@ -66,12 +68,12 @@ const Detail = () => {
 
                         <div className="space-y-8 lg:sticky lg:top-8">
                             <ProductHeader
-                                name={product.name}
+                                name={t(product.name)}
                                 subtitle={`Category: ${product.categoryHeader}`}
                             />
 
                             <ProductDescription
-                                description={`${product.name}.`}
+                                description={`${t(product.name)}.`}
                             />
 
                             <ActionButtons onSubscribe={handleSubscribe}/>

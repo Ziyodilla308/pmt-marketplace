@@ -29,7 +29,7 @@ const CategoryFilters = ({category, selectedFilter, onFilterChange}: Props) => {
                                 ${selectedFilter === f.type ? "border-red-300 bg-red-100 shadow-md" : "border-gray-300"}
                             `}
                         >
-                            <span className="text-gray-800 font-medium">{f.name}</span>
+                            <span className="text-gray-800 font-medium">{t(f.name)}</span>
                             <div
                                 className={`
                                     w-5 h-5 rounded-full border-2 flex items-center justify-center

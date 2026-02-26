@@ -66,7 +66,6 @@ const Header = () => {
                         <img src="/pmt_logo_no_bg.png" alt="PMT logo" width={150} height={100}/>
                     </Link>
 
-                    {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center space-x-6">
                         <Link
                             to={`/${l}`}
@@ -85,7 +84,7 @@ const Header = () => {
                                 {pmtCategories.map((category) => (
                                     <DropdownMenuItem key={category.category} asChild>
                                         <Link to={`/${l}/categories/${category.category}`} className="cursor-pointer">
-                                            {category.name}
+                                            {t(category.name)}
                                         </Link>
                                     </DropdownMenuItem>
                                 ))}
@@ -115,7 +114,6 @@ const Header = () => {
                                     selectedLanguageCode === lang.code ? 'bg-gray-200' : ''
                                 }`}
                             >
-                                {/* Flag ikonka */}
                                 <img
                                     src={lang.svg}
                                     alt={lang.name}
@@ -127,7 +125,6 @@ const Header = () => {
                         <ThemeSwitcher />
                     </div>
 
-                    {/* Mobile Menu */}
                     <Sheet open={isOpen} onOpenChange={setIsOpen}>
                         <SheetTrigger asChild className="md:hidden">
                             <Button variant="ghost" size="icon">

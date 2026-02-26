@@ -41,7 +41,7 @@ const ProductsGrid = ({products}: Props) => {
                                 className="text-lg font-semibold leading-tight
                    transition-colors duration-300 group-hover:text-primary"
                             >
-                                {product.name}
+                                {t(product.name)}
                             </h3>
                         </div>
                     </CardContent>

@@ -1,9 +1,11 @@
-import translationUZ from "./locales/uz.json";
-import translationRU from "./locales/ru.json";
-import translationEN from "./locales/en.json";
+
 import i18next from "i18next";
 import {initReactI18next} from "react-i18next";
 import {getLocalItem, setLocalItem} from "@/utils/persist-storage";
+
+import translationUZ from "./locales/uz.json";
+import translationRU from "./locales/ru.json";
+import translationEN from "./locales/en.json";
 
 const resources = {
     ru: {translation: translationRU},
@@ -23,8 +25,7 @@ i18next
         resources,
         lng: savedLang,
         fallbackLng: "ru",
-        debug: false,
-        keySeparator: false,
+        debug: true,
         interpolation: {
             escapeValue: false,
         },
