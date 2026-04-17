@@ -82,7 +82,7 @@ const Detail = () => {
                 </div>
             </section>
 
-            <TechnicalSpecs specifications={specifications}/>
+            {/*<TechnicalSpecs specifications={specifications}/>*/}
 
             {/*<RecommendedProducts products={recommendedProducts}/>*/}
         </div>
